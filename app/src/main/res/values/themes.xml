@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.DeepCart" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#184E77</item>
+        <item name="colorPrimaryVariant">#17618F</item>
+        <item name="colorOnPrimary">#E9F9FF</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#34A0A4</item>
+        <item name="colorSecondaryVariant">#2AA0A3</item>
+        <item name="colorOnSecondary">#CAF5FF</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorOnPrimary</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>
