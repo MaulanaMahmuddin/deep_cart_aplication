@@ -35,7 +35,11 @@ class MainActivity : AppCompatActivity() {
         startLoadingDataPeriodically()
 
         binding.checkoutButton.setOnClickListener {
-            val intent = Intent(this, CheckoutActivity::class.java)
+            val totalAmount = binding.totalAmountTextView.text.toString()
+
+            val intent = Intent(this, CheckoutActivity::class.java).apply {
+                putExtra("TOTAL_AMOUNT", totalAmount)
+            }
             startActivity(intent)
         }
     }

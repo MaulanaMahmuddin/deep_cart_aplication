@@ -1,13 +1,8 @@
 package com.example.deepcart
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.deepcart.databinding.ActivityMainBinding
 import com.example.deepcart.databinding.CheckoutLayoutBinding
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.Job
 
 class CheckoutActivity : AppCompatActivity() {
 
@@ -19,6 +14,10 @@ class CheckoutActivity : AppCompatActivity() {
 
         val view = binding.root
         setContentView(view)
+
+        val totalAmount = intent.getStringExtra("TOTAL_AMOUNT")
+
+        binding.totalAmountTextView.text = totalAmount
 
         binding.continueShoppingButton.setOnClickListener {
             finish()
